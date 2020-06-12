@@ -30,6 +30,10 @@ body {
 }
 
 .time-flip-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
     color: #ffe603;
     text-shadow: 6px 6px #fc1212;
     font-size: 4em;
@@ -92,7 +96,7 @@ body {
 
 @media (max-width: 600px) {
     .game-container {
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(3, auto);
     }
     .time-flip-container {
         flex-direction: column;
