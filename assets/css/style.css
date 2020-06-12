@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(#f8f9fa,#080bec);
+    }
+    
+.header {
+    font-family: 'Germania One' , sans-serif;
+    text-shadow: 2px 2px red;
+    color:#ffe603;
+}
