@@ -90,4 +90,12 @@ body {
     transition: transform ease-in-out 100ms;
 }
 
-
+@media (max-width: 600px) {
+    .game-container {
+        grid-template-columns: repeat(2, auto);
+    }
+    .time-flip-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
