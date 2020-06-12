@@ -17,6 +17,56 @@ body {
     
 .header {
     font-family: 'Germania One' , sans-serif;
-    text-shadow: 2px 2px red;
+    text-shadow: 6px 6px #fc1212;
     color:#ffe603;
+    text-align: center;
+    font-size: 6em;
+}
+
+#info-container{
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.time-flip-container{
+    color: #ffe603;
+    text-shadow: 6px 6px #fc1212;
+    font-size: 4em;
+    font-family: 'Germania One', sans-serif;
+}
+
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;
+}
+
+.card {
+    height: 175px;
+    width: 125px;
+    position: relative;
+}
+
+.card-face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0);
+    transition: transform ease-in-out 100ms;
 }
