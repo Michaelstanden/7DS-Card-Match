@@ -103,9 +103,21 @@ width: 100%;
     transition: transform ease-in-out 100ms;
 }
 
+.contact-button {
+    display: list-item;
+    background-color: rgba(60, 60, 60, 0.85);
+    width: 450px;
+    padding: 30px;
+    max-width: 100vw;
+    margin: auto;
+    font-family: "Germania One", sans-serif;
+    font-size: 2em;
+    color: #ffe603;
+    text-shadow: 6px 6px #fc1212;
+}
+
  .form-section {
      clear: left;
-     display: flex;
      align-items: center;
      justify-content: center;
      margin-top: 10%;
@@ -120,6 +132,7 @@ width: 100%;
      padding: 30px;
      max-width: 100vw;
      margin-bottom: 8%;
+     margin: auto;
 }
  .signup-form h2 {
      color: #FFFFFF;
@@ -151,10 +164,13 @@ width: 100%;
      border-radius: 2px;
      padding: 15px 32px 15px 32px;
      text-align: center;
-     font-size: 100%;
+     font-size: 2em;
      background-color: #030177;
-     color: #FFFFFF;
+     color: #ffe603;
+    text-shadow: 6px 6px #fc1212;
+    font-family: "Germania One", sans-serif;
      display: block;
+    
 }
  .submit-button:hover{
      background-color: #FFFFFF;
