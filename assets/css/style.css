@@ -107,13 +107,21 @@ width: 100%;
     display: list-item;
     background-color: rgba(60, 60, 60, 0.85);
     width: 450px;
-    padding: 30px;
     max-width: 100vw;
+    height: 100px;
     margin: auto;
     font-family: "Germania One", sans-serif;
     font-size: 2em;
     color: #ffe603;
     text-shadow: 6px 6px #fc1212;
+    transition: all 2ms ease-in-out;
+}
+.contacthead {
+    margin:auto;
+}
+
+.contact-button:hover {
+    transform: scale(1.1);
 }
 
  .form-section {
