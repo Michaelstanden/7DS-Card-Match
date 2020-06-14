@@ -92,7 +92,7 @@ width: 100%;
     transform: scale(1.1);
 }
 
-.card-back{
+.card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -101,6 +101,26 @@ width: 100%;
     align-items: center;
     transform: translate(0);
     transition: transform ease-in-out 100ms;
+}
+
+.footer ul li{
+    display: inline-block;
+    justify-content: space-between;
+    padding: 70px;
+    align-items: center;
+    margin: auto;
+    font-family: 'Germania One', sans-serif;
+    font-size: 3em;
+}
+
+.footer a {
+    color: #ffe603;
+    text-shadow: 6px 6px #fc1212;
+    transition: all 200ms ease-in
+}
+
+.footer a:hover {
+    transform: scale(1.1);
 }
 
 @media (max-width: 500px) {
