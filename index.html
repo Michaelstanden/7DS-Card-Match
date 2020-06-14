@@ -11,14 +11,13 @@
 <!--code containing the header and game counting logistics-->
 <header> 
 <h1 class="header">Seven Deadly Sins Card Match</h1>
+<div class="time-flip-container" id="info-container">
+<div class="flips"><h2>Flips</h2> <span id= "flip-counter">0</span></div>
+<div class="instruction" id="instruction"> <h2>Instructions</h2> <p>Cards start facing down. On the other side of each card there is an image. There are two of each images that have been mixed up throughout the board.
+Match the two images by turning one card over at a time. If the two cards flipped do not match, then they flip back over. Try to remember where the mathcing pairs are. For a challenge try to complete in as little flips as possible. </p></div>
+</div>
 </header>
 
-<div class="time-flip-container" id="info-container">
-<div id="timer" class="time">Time <span id="time-remaining">120</span>
-</div>
-<div class="flips">Flips <span id= "flip-counter">0</span></div>
-<div class="instruction" id="instruction">Instructions</div>
-</div>
 
 <section class="game-container" id="container">
 <!--this will contain all card data, such as images for the front and back of the cards. 
@@ -34,7 +33,7 @@ Data-name containers will be applied for each card image name to ensure random m
 </div>
 <div class="card" data-name="diane">
 <img class="card-back card-face" src="assets/images/cardback.jpg">
-<img class="card-front card-face" src="assets/images/ban.jpg">
+<img class="card-front card-face" src="assets/images/diane.jpg">
 </div>
 <div class="card" data-name="diane">
 <img class="card-back card-face" src="assets/images/cardback.jpg">
