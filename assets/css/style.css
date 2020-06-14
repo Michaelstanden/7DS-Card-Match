@@ -103,23 +103,35 @@ width: 100%;
     transition: transform ease-in-out 100ms;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
 .footer ul li{
     display: inline-block;
     justify-content: space-between;
-    padding: 70px;
+    padding: 50px;
     align-items: center;
     margin: auto;
     font-family: 'Germania One', sans-serif;
     font-size: 3em;
+    position: static;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .footer a {
     color: #ffe603;
     text-shadow: 6px 6px #fc1212;
-    transition: all 200ms ease-in
+    transition: all 200ms ease-in;
+    justify-items: center;
+    text-align: center;
 }
 
-.footer a:hover {
+.footer li:hover {
     transform: scale(1.1);
 }
 
