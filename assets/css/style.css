@@ -230,14 +230,28 @@ footer {
     position: static;
     padding-top: 50px;
     padding-bottom: 50px;
+    color: #ffe603;
+    text-shadow: 6px 6px #fc1212;
 }
 
 .footer a {
-    color: #ffe603;
-    text-shadow: 6px 6px #fc1212;
     transition: all 200ms ease-in;
     justify-items: center;
     text-align: center;
+    color: #ffe603;
+    text-shadow: 6px 6px #fc1212;
+}
+
+.copyright {
+display: inline-block;
+padding: 50px;
+margin: auto;
+font-family: 'Germania One', sans-serif;
+font-size: 3em;
+padding-top: 50px;
+padding-bottom: 50px;
+color: #ffe603;
+text-shadow: 6px 6px #fc1212;
 }
 
 .footer li:hover {
