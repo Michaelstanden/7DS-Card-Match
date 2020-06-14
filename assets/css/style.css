@@ -38,7 +38,7 @@ width: 100%;
 
 
 .inst-flip-container{
-    display: flex;
+    display: list-item;
     align-items: center;
     justify-content: space-between;
     padding: 70px;
