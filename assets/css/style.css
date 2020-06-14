@@ -32,13 +32,13 @@ width: 100%;
 
 #info-container{
     grid-column: 1 / -1;
-    display: flex;
+    display: list-item;
     justify-content: space-between;
 }
 
 
 .inst-flip-container{
-    display: list-item;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 70px;
