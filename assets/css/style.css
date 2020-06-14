@@ -37,7 +37,7 @@ width: 100%;
 }
 
 
-.inst-flip-container{
+.guide-flip-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,6 +46,33 @@ width: 100%;
     text-shadow: 6px 6px #fc1212;
     font-size: 3em;
     font-family: 'Germania One', sans-serif;
+}
+
+.guide-button {
+    display: list-item;
+    background-color: rgba(60, 60, 60, 0.85);
+    max-width: 100vw;
+    height: 100px;
+    margin: auto;
+    font-family: "Germania One", sans-serif;
+    font-size: 1em;
+    color: #ffe603;
+    text-shadow: 6px 6px #fc1212;
+    transition: all 2ms ease-in-out;
+    border: solid 2px;
+}
+
+.guide-button:hover {
+    transform: scale(1.1);
+}
+
+.flips {
+    width: 250px;
+    height: 100px;
+    border: solid 2px #ffe603;
+    margin: auto;
+    background-color: rgba(60, 60, 60, 0.85);
+    text-shadow: 6px 6px #fc1212;
 }
 
 
@@ -226,6 +253,11 @@ footer {
         align-items: center;
     }
     .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .guide-button {
         flex-direction: column;
         align-items: center;
     }
