@@ -37,6 +37,22 @@ body {
     justify-content: space-between;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
 
 .guide-turn-container{
     display: flex;
@@ -61,11 +77,22 @@ body {
     text-shadow: 6px 6px #fc1212;
     transition: all 2ms ease-in-out;
     border: solid 2px;
+    cursor: pointer;
 }
 
-.guide-button:hover {
-    transform: scale(1.1);
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
+
+
+/*.guide-button:hover {
+    transform: scale(1.1);
+}*/
 
 .text-box {
     background: linear-gradient(to left, rgb(255, 255, 255, 0)0%, rgba(25, 25, 25, 0.8) 5%, rgba(25, 25, 25, 0.8) 95%, rgb(255, 255, 255, 0) 100%);
