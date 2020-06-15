@@ -63,6 +63,11 @@ body {
     cursor: pointer;
 }
 
+a {
+    color: #ffe603;
+    text-decoration-line: none;
+}
+
 
 .guide-button {
     display: list-item;
