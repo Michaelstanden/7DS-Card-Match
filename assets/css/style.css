@@ -12,7 +12,7 @@ html {
 
 body {
     margin: 0;
-    background: radial-gradient(#f8f9fa,#080bec);
+    background: radial-gradient(#030177, #ffffff);
     }
     
 .header {
@@ -20,15 +20,16 @@ body {
     text-shadow: 6px 6px #fc1212;
     color:#ffe603;
     text-align: center;
-    font-size: 6em; 
+    font-size: 3em; 
     text-decoration: underline; 
 }
 
-.banner-img {
-width: 100%;
-
-
+.title-img {
+    background-image: url("../images/banner3.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
 }
+
 
 #info-container{
     grid-column: 1 / -1;
@@ -44,7 +45,7 @@ width: 100%;
     padding: 70px;
     color: #ffe603;
     text-shadow: 6px 6px #fc1212;
-    font-size: 3em;
+    font-size: 2em;
     font-family: 'Germania One', sans-serif;
 }
 
@@ -64,6 +65,14 @@ width: 100%;
 
 .guide-button:hover {
     transform: scale(1.1);
+}
+
+.text-box {
+    background: linear-gradient(to left, rgb(255, 255, 255, 0)0%, rgba(25, 25, 25, 0.8) 5%, rgba(25, 25, 25, 0.8) 95%, rgb(255, 255, 255, 0) 100%);
+    padding: 15px 10px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .turns {
