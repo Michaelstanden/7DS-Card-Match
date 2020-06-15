@@ -15,14 +15,14 @@
 <h1 class="header">Seven Deadly Sins Card Match.</h1>
 </header>
 
-<div class="guide-flip-container" id="info-container">
+<div class="guide-turn-container" id="info-container">
 <div class="instruction">
 <button class="guide-button"> Instructions:</button>
 <p>Cards start facing down. On the other side of each card there is an image. There are two of each image that have been mixed up throughout the board.
 Match the two images by turning one card over at a time. If the two cards flipped match, then they stay turned over; if they do not match, then they flip back over. Try to remember where the mathcing pairs are. 
 For a challenge try to match all the cards in as little flips as possible. </p></div>
-<div class="flips">Flips:
-<span id= "flip-counter"> 0</span>
+<div class="turns">Turns:
+<span id= "turns-counter"> 0</span>
 </div>
 </div>
 
@@ -35,16 +35,16 @@ Data-name containers will be applied for each card image name to ensure random m
 <img class="card-front card-face" src="assets/images/ban.jpg">
 </div>
 <div class="card" data-name="ban">
-<img class="card-back card-face" src="assets/images/cardback.jpg">
-<img class="card-front card-face" src="assets/images/ban.jpg">
+<img class="card-back " src="assets/images/cardback.jpg">
+<img class="card-front " src="assets/images/ban.jpg">
 </div>
 <div class="card" data-name="diane">
-<img class="card-back card-face" src="assets/images/cardback.jpg">
-<img class="card-front card-face" src="assets/images/diane.jpg">
+<img class="card-back " src="assets/images/cardback.jpg">
+<img class="card-front " src="assets/images/diane.jpg">
 </div>
 <div class="card" data-name="diane">
-<img class="card-back card-face" src="assets/images/cardback.jpg">
-<img class="card-front card-face" src="assets/images/diane.jpg">
+<img class="card-back " src="assets/images/cardback.jpg">
+<img class="card-front " src="assets/images/diane.jpg">
 </div>
 <div class="card" data-name="elizabeth">
 <img class="card-back card-face" src="assets/images/cardback.jpg">
@@ -97,6 +97,8 @@ Data-name containers will be applied for each card image name to ensure random m
 
 
 </section> 
+
+<!-- This section has the form contact code. Will be linked to an API in JS for email enquiries-->
 <div id="contactbground">
         <section class="form-section">
        <button class="contact-button"> <h2 class="contacthead">Contact</h2></button>

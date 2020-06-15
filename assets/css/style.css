@@ -37,7 +37,7 @@ width: 100%;
 }
 
 
-.guide-flip-container{
+.guide-turn-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,7 +66,7 @@ width: 100%;
     transform: scale(1.1);
 }
 
-.flips {
+.turns {
     width: 250px;
     height: 100px;
     border: solid 2px #ffe603;
@@ -84,24 +84,29 @@ width: 100%;
     justify-content: center;
     perspective: 500px;
 }
-.card:hover .card-back /*visible*/{
+/*.card:hover .card-back (*visible*){
     transform: rotateY(-180deg);
 }
-.card:hover .card-front /*visible*/{
+.card:hover .card-front (*visible*){
     transform: rotateY(0);
-}
+}*/
 .card {
     height: 175px;
     width: 125px;
-    position: relative;
-    transition: all .5s ease-in-out;
+    margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
 
-.card-front{
+.card.flip{
     transform: rotateY(180deg);
 }
 
-.card-face{
+.card-back,
+.card-front {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -113,13 +118,19 @@ width: 100%;
     border-width: 1px;
     border-style: solid; 
     transition: transform 500ms ease-in-out; 
+    transform: translate(0);
+}
+
+
+.card-front{
+    transform: translateY(180deg);
 }
 
 .card:hover { 
     transform: scale(1.1);
 }
 
-.card-back {
+/*.card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -128,7 +139,7 @@ width: 100%;
     align-items: center;
     transform: translate(0);
     transition: transform ease-in-out 100ms;
-}
+}*/
 
 .contact-button {
     display: list-item;

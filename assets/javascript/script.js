@@ -1,7 +1,7 @@
 const cards = document.querySelectorAll(".card");
 
 function flipCard(){
-console.log('Am I wokring?');
+this.classList.toggle('flip');
 console.log(this);
 }
 
