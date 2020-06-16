@@ -1,8 +1,7 @@
-$(document).ready(function(){
-    $(".guide-button").click(function(){
+$(document).ready(function () {
+    $(".guide-button").click(function () {
         $(".text-box").toggle("medium");
     });
-
 });
 
 const cards = document.querySelectorAll(".card");
