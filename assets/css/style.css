@@ -275,4 +275,12 @@ text-shadow: 6px 6px #fc1212;
         flex-direction: column;
         align-items: center;
     }
+    .restart-btn{
+        flex-direction: column;
+        align-items: center;
+    }
+    .quit-btn {
+        flex-direction: column;
+        align-items: center;
+    }
 }
