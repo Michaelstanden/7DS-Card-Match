@@ -259,10 +259,12 @@ text-shadow: 6px 6px #fc1212;
     .guide-button {
         flex-direction: column;
         align-items: center;
+        font-size: 1em;
     }
     .start-btn {
         flex-direction: column;
         align-items: center;
+        font-size: 1em;
     }
     .restart-btn{
         flex-direction: column;
