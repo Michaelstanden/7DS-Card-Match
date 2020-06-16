@@ -53,7 +53,7 @@ body {
     height: auto;
     margin: auto;
     font-family: "Germania One", sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     color: #ffe603;
     text-shadow: 6px 6px #fc1212;
     transition: all 2ms ease-in-out;
@@ -74,7 +74,7 @@ a {
     height: auto;
     margin: auto;
     font-family: "Germania One", sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     color: #ffe603;
     text-shadow: 6px 6px #fc1212;
     transition: all 2ms ease-in-out;
@@ -112,10 +112,10 @@ a {
     justify-content: center;
     perspective: 500px;
 }
-.card:hover .card-back (*visible*){
+.card:hover .card-back /*visible*/{
     transform: rotateY(-180deg);
 }
-.card:hover .card-front (*visible*){
+.card:hover .card-front /*visible*/{
     transform: rotateY(0);
 }
 .card {

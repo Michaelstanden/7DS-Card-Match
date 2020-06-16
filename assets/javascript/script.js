@@ -1,3 +1,7 @@
+$(document).ready(function(){
+
+});
+
 const cards = document.querySelectorAll(".card");
 
 function flipCard(){
