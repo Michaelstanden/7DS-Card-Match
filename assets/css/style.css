@@ -33,7 +33,6 @@ body {
 
 #info-container{
     grid-column: 1 / -1;
-    display: list-item;
     justify-content: space-between;
 }
 
@@ -113,12 +112,12 @@ a {
     justify-content: center;
     perspective: 500px;
 }
-/*.card:hover .card-back (*visible*){
+.card:hover .card-back (*visible*){
     transform: rotateY(-180deg);
 }
 .card:hover .card-front (*visible*){
     transform: rotateY(0);
-}*/
+}
 .card {
     height: 175px;
     width: 125px;
@@ -134,21 +133,7 @@ a {
     transform: rotateY(180deg);
 }
 
-.card-back,
-.card-front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backface-visibility: hidden;
-    border-radius: 12px;
-    border-width: 1px;
-    border-style: solid; 
-    transition: transform 500ms ease-in-out; 
-    transform: translate(0);
-}
+
 
 
 .card-front{
@@ -159,7 +144,7 @@ a {
     transform: scale(1.1);
 }
 
-/*.card-back {
+.card-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -168,7 +153,20 @@ a {
     align-items: center;
     transform: translate(0);
     transition: transform ease-in-out 100ms;
-}*/
+    border-radius: 10px;
+}
+.card-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0);
+    transition: transform ease-in-out 100ms;
+    border-radius: 10px;
+}
+
 button {
     margin-left: 20px;
     margin-right: 20px;
@@ -213,14 +211,13 @@ footer {
 .footer ul li{
     display: inline-block;
     justify-content: space-between;
-    padding: 50px;
+    padding: 20px;
     align-items: center;
     margin: auto;
     font-family: 'Germania One', sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     position: static;
     padding-top: 50px;
-    padding-bottom: 50px;
     color: #ffe603;
     text-shadow: 6px 6px #fc1212;
 }
@@ -235,12 +232,9 @@ footer {
 
 .copyright {
 display: inline-block;
-padding: 50px;
 margin: auto;
 font-family: 'Germania One', sans-serif;
-font-size: 3em;
-padding-top: 50px;
-padding-bottom: 50px;
+font-size: 2em;
 color: #ffe603;
 text-shadow: 6px 6px #fc1212;
 }
