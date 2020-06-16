@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    $(".guide-button").click(function(){
+        $(".text-box").toggle("medium");
+    });
 
 });
 
