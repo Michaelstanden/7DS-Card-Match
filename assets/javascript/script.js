@@ -2,6 +2,9 @@ $(document).ready(function () {
     $(".guide-button").click(function () {
         $(".text-box").toggle("medium");
     });
+    $("restart-btn").click(function(){
+        location.reload();
+    })
 });
 
 const cards = document.querySelectorAll(".card");
