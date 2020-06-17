@@ -128,20 +128,11 @@ a {
   box-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
 
-.card.flip{
-    transform: rotateY(180deg);
-}
 
 /*.card:active {
     transform: scale(0.97);
     transition: transform .2s;
 }*/
-
-
-.card-front{
-    transform: translateY(180deg);
-}
-
 
 .card-front {
     position: absolute;
@@ -150,10 +141,9 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(0);
+    transform: translate(1);
     transition: transform ease-in-out 100ms;
     border-radius: 10px;
-    backface-visibility: hidden;
 }
 .card-back {
     position: absolute;
@@ -165,8 +155,16 @@ a {
     transform: translate(1);
     transition: transform ease-in-out 100ms;
     border-radius: 10px;
+    backface-visibility: hidden;
 }
 
+.card-front{
+    transform: translateY(180deg);
+}
+
+.card.flip{
+    transform: rotateY(180deg);
+}
 
 button {
     margin-left: 20px;
