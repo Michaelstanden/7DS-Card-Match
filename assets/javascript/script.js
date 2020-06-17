@@ -60,7 +60,7 @@ function unFlipcards() {
 }, 1000); 
 
 }
-//will allow the board to reset
+
 function resetBoard(){
     [hasFlippedCard,lockBoard] = [false,false];
     [firstCard, secondCard] = [null, null];
