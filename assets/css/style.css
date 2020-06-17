@@ -36,6 +36,10 @@ body {
     justify-content: space-between;
 }
 
+.spacing {
+    margin:auto;
+    padding: 3em;
+}
 
 .guide-turn-container {
     align-items: center;
@@ -112,12 +116,7 @@ a {
     justify-content: center;
     perspective: 500px;
 }
-.card:hover .card-back /*visible*/{
-    transform: rotateY(-180deg);
-}
-.card:hover .card-front /*visible*/{
-    transform: rotateY(0);
-}
+
 .card {
     height: 175px;
     width: 125px;
@@ -133,7 +132,10 @@ a {
     transform: rotateY(180deg);
 }
 
-
+.card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
 
 
 .card-front{
@@ -144,6 +146,7 @@ a {
     transform: scale(1.1);
 }
 
+.card-front,
 .card-back {
     position: absolute;
     width: 100%;
@@ -154,18 +157,9 @@ a {
     transform: translate(0);
     transition: transform ease-in-out 100ms;
     border-radius: 10px;
+    backface-visibility: hidden;
 }
-.card-front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(0);
-    transition: transform ease-in-out 100ms;
-    border-radius: 10px;
-}
+
 
 button {
     margin-left: 20px;
