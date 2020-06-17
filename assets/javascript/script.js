@@ -15,6 +15,7 @@ let firstCard, secondCard;
 
 function flipCard(){
     if(lockBoard) return;
+    if(this === firstCard) return;
 this.classList.add('flip');
  if (!hasFlippedCard) {
      //first time a player has clicked a card
@@ -39,6 +40,8 @@ function checkForMatch() {
 function disableCards() {
      firstCard.removeEventListener('click' , flipCard);
     secondCard.removeEventListener('click' , flipCard);
+
+    resetBoard();
 }
 
 function unFlipcards() {
@@ -48,6 +51,12 @@ function unFlipcards() {
     secondCard.classList.remove('flip');
     lockBoard= false;
 }, 1000); 
+resetBoard();
+}
+
+function resetBoard(){
+    [hasFlippedCard,lockBoard] = [false,false];
+    [firstCard,secondCard] = [null,null];
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
