@@ -21,17 +21,29 @@ this.classList.add('flip');
  } else {
      hasFlippedCard = false;
      secondCard = this;
-if (firstCard.dataset.name === secondCard.dataset.name) {
-    firstCard.removeEventListener('click' , flipCard);
-    secondCard.removeEventListener('click' , flipCard);
-} else {
-    setTimeout( ()=> {
-    firstCard.classList.remove('flip');
-    secondCard.classList.remove('flip');
-}, 1000);
-}
+     checkForMatch();
  }
 
+}
+
+function checkForMatch() {
+ if (firstCard.dataset.name === secondCard.dataset.name) {
+    disableCards()
+} else {
+ unFlipcards()
+}   
+}
+
+function disableCards() {
+     firstCard.removeEventListener('click' , flipCard);
+    secondCard.removeEventListener('click' , flipCard);
+}
+
+function unFlipcards() {
+      setTimeout( ()=> {
+    firstCard.classList.remove('flip');
+    secondCard.classList.remove('flip');
+}, 1000); 
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
