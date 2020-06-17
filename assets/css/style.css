@@ -126,7 +126,6 @@ a {
   transform-style: preserve-3d;
   transition: transform .5s;
   box-shadow: 1px 1px 1px rgba(0,0,0,.3);
-  background-image: url("assets/images/cardback.jpg");
 }
 
 .card.flip{
@@ -144,8 +143,7 @@ a {
 }
 
 
-.card-front,
-.card-back {
+.card-front {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -155,7 +153,18 @@ a {
     transform: translate(0);
     transition: transform ease-in-out 100ms;
     border-radius: 10px;
-    backface-visibility: visible;
+    backface-visibility: hidden;
+}
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(1);
+    transition: transform ease-in-out 100ms;
+    border-radius: 10px;
 }
 
 
