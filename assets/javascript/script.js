@@ -21,9 +21,15 @@ this.classList.add('flip');
  } else {
      hasFlippedCard = false;
      secondCard = this;
-
-     console.log (firstCard.dataset.name);
-     console.log (secondCard.dataset.name);
+if (firstCard.dataset.name === secondCard.dataset.name) {
+    firstCard.removeEventListener('click' , flipCard);
+    secondCard.removeEventListener('click' , flipCard);
+} else {
+    setTimeout( ()=> {
+    firstCard.classList.remove('flip');
+    secondCard.classList.remove('flip');
+}, 1000);
+}
  }
 
 }
