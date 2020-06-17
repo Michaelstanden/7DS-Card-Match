@@ -21,7 +21,9 @@ this.classList.add('flip');
  } else {
      hasFlippedCard = false;
      secondCard = this;
-     console.log({hasFlippedCard, secondCard});
+
+     console.log (firstCard.dataset.name);
+     console.log (secondCard.dataset.name);
  }
 
 }
