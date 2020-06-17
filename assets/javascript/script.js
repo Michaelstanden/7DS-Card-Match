@@ -74,5 +74,10 @@ function resetBoard(){
 })()
 //iife (immediately invoked function expression. Means the function will be invoked right after its definition.
 
+function congratulations(){
+    if (matchedCard.length == 16){
+        clearInterval(interval);
+        
+
 cards.forEach(card => card.addEventListener('click', flipCard));
 
