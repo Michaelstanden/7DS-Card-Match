@@ -86,7 +86,7 @@ a {
     cursor: pointer;
 }
 
-.guide-btnn:hover, .start-btn:hover {
+.guide-btn:hover, .start-btn:hover {
     transform: scale(1.1);
 }
 
@@ -105,6 +105,33 @@ a {
     margin: auto;
     background-color: rgba(60, 60, 60, 0.85);
     text-shadow: 6px 6px #fc1212;
+}
+
+.overlay-text {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  font-family: "Germania One", sans-serif;
+  color:#ffe603;
+  text-shadow: 6px 6px #fc1212;
+  font-size: 3em;
+  background-color: rgba(0, 0, 0, .8)
+}
+
+.overlay-text-small {
+  font-size: 1em;
+}
+
+.overlay-text.visible{
+  display: flex;
+  flex-direction: column;
+
 }
 
 
@@ -266,6 +293,10 @@ text-shadow: 6px 6px #fc1212;
         float: none;
     }
     .quit-btn {
+        flex-direction: column;
+        align-items: center;
+    }
+    .overlay-text.visible {
         flex-direction: column;
         align-items: center;
     }
