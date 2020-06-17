@@ -126,25 +126,23 @@ a {
   transform-style: preserve-3d;
   transition: transform .5s;
   box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  background-image: url("assets/images/cardback.jpg");
 }
 
 .card.flip{
     transform: rotateY(180deg);
 }
 
-.card:active {
+/*.card:active {
     transform: scale(0.97);
     transition: transform .2s;
-}
+}*/
 
 
 .card-front{
     transform: translateY(180deg);
 }
 
-.card:hover { 
-    transform: scale(1.1);
-}
 
 .card-front,
 .card-back {
@@ -157,7 +155,7 @@ a {
     transform: translate(0);
     transition: transform ease-in-out 100ms;
     border-radius: 10px;
-    backface-visibility: hidden;
+    backface-visibility: visible;
 }
 
 
