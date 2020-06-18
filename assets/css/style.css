@@ -223,24 +223,32 @@ button {
     border: solid 2px;
     cursor: pointer;
 }
-
+.spacing {
+    height: 1em;
+}
 footer {
-    display: flex;
+    
     justify-content: center;
     justify-items: center;
     align-items: center;
+     display: inline-block;
+     width: 100%;
+     bottom: 0;
+     text-align: center;
+     position: static;
+     background-color: rgba(60, 60, 60, 0.85);
+
 }
 
 .footer ul li{
     display: inline-block;
     justify-content: space-between;
-    padding: 20px;
+    padding: 40px;
     align-items: center;
     margin: auto;
     font-family: 'Germania One', sans-serif;
     font-size: 1.5em;
     position: static;
-    padding-top: 90px;
     color: #ffe603;
     text-shadow: 6px 6px #fc1212;
 }
