@@ -15,13 +15,15 @@ let lockBoard = false;
 let firstCard, secondCard;
 let matches = 0;
 let winner = document.querySelector(".overlay-text");
-
+let turns = 0;
 
 
 //function to check if the card flipped should lock the board on a no match or should play on and match
 function flipCard(){
     if(lockBoard) return;
     if(this === firstCard) return;
+    turns += 1;
+    console.log(turns);
 
 this.classList.add('flip');
 
