@@ -22,7 +22,6 @@ let winner = document.querySelector(".overlay-text");
 function flipCard(){
     if(lockBoard) return;
     if(this === firstCard) return;
-    turnsCounter();
 
 this.classList.add('flip');
 
@@ -87,13 +86,14 @@ function congratulations() {
         winner.classList.add("visible");
     }
 
-function turnsCounter() {
-    var turns = document.getElementById("#turns-counter");
-    var number = turns.innerHTML;
-    number ++;
-    turns.innerHTML=number;
 
-}
+  var turns = document.getElementById("turns-counter"),
+  count = 0;
+  turns.onclick = function(flipCard){
+  count += 1;
+  turns.innerHTML = count;
+  }
+
         
         
 
