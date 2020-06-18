@@ -16,6 +16,7 @@ let firstCard, secondCard;
 let matches = 0;
 let winner = document.querySelector(".overlay-text");
 
+
 //function to check if the card flipped should lock the board on a no match or should play on and match
 function flipCard(){
     if(lockBoard) return;
@@ -40,6 +41,9 @@ this.classList.add('flip');
 function checkForMatch() {
  if (firstCard.dataset.name === secondCard.dataset.name) {
      matches +=1;
+     if(matches === 8){
+         congratulations();
+     }
     disableCards()
 } else {
  unFlipcards()
@@ -78,10 +82,9 @@ function resetBoard(){
 //iife (immediately invoked function expression. Means the function will be invoked right after its definition.
 
 function congratulations() {
-    if (matches === 8){
         winner.classList.add("visible");
+        onclick.this.location.reload();
     }
-}
         
         
 
