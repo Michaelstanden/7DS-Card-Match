@@ -15,6 +15,11 @@ let lockBoard = false;
 let firstCard, secondCard;
 let matches = 0;
 let winner = document.querySelector(".overlay-text");
+let flip = {
+        flipCounter: document.getElementById("turns-counter"),
+        flipCount: 0,
+        timesFlipped: 0,
+    };
 
 
 
@@ -22,6 +27,9 @@ let winner = document.querySelector(".overlay-text");
 function flipCard(){
     if(lockBoard) return;
     if(this === firstCard) return;
+    flip.flipCount++;
+    flip.flipCounter.innerText = flip.flipCount;
+    flip.timesFlipped++;
 
 this.classList.add('flip');
 
@@ -86,16 +94,7 @@ function congratulations() {
         winner.classList.add("visible");
     }
 
-
-  var turns = document.getElementById("turns-counter"),
-  count = 0;
-  turns.onclick = function(flipCard){
-  count += 1;
-  turns.innerHTML = count;
-  }
-
         
-        
-
+    
 cards.forEach(card => card.addEventListener('click', flipCard));
 
