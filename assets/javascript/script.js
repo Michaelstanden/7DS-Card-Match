@@ -15,15 +15,14 @@ let lockBoard = false;
 let firstCard, secondCard;
 let matches = 0;
 let winner = document.querySelector(".overlay-text");
-let turns = 0;
+
 
 
 //function to check if the card flipped should lock the board on a no match or should play on and match
 function flipCard(){
     if(lockBoard) return;
     if(this === firstCard) return;
-    turns += 1;
-    console.log(turns);
+    turnsCounter();
 
 this.classList.add('flip');
 
@@ -87,6 +86,14 @@ function resetBoard(){
 function congratulations() {
         winner.classList.add("visible");
     }
+
+function turnsCounter() {
+    var turns = document.getElementById("#turns-counter");
+    var number = turns.innerHTML;
+    number ++;
+    turns.innerHTML=number;
+
+}
         
         
 
