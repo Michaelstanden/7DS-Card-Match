@@ -16,7 +16,6 @@ I have used HTML, CSS, and JavaScript to build this game which will form part of
     - [**User Stories**](#user-stories)
     - [**Design choices**](#design-choices)
     - [**Wireframes**](#wireframes)
-        - [Variation Between Wireframes and Final Product](#variation-between-wireframes-and-final-product)
 
 2. [**Technologies Used**](#technologies-used)
 
