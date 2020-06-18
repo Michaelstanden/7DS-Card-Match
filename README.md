@@ -232,7 +232,7 @@ If you wanted to run this project locally and not use GitHub Pages, you can foll
 2. The idea on how get the 3D perspective in CSS for the card flips provided by [Desandro](https://3dtransforms.desandro.com/card-flip).
 
 3. The use of Grid spacing in CSS by [CSS Tricks](http://css-tricks.com/snippets/css/complete-guide-grid/).
-4. The further reading of Javascript in general [Mozilla MDN](https://developer.mozilla.org/en-US/
+4. The further reading of Javascript in general [Mozilla MDN](https://developer.mozilla.org/en-US/)
  
 
 ### Acknowledgements
