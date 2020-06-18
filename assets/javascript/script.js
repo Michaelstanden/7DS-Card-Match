@@ -15,7 +15,7 @@ let lockBoard = false;
 let firstCard, secondCard;
 let matches = 0;
 let winner = document.querySelector(".overlay-text");
-let refreshButton = document.querySelectorAll("#winner-text");
+
 
 
 //function to check if the card flipped should lock the board on a no match or should play on and match
@@ -84,10 +84,6 @@ function resetBoard(){
 
 function congratulations() {
         winner.classList.add("visible");
-    }
-
-    function clickToRefresh () {
-        refreshButton.location.reload();
     }
         
         
