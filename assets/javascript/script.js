@@ -20,6 +20,11 @@ let flip = {
         flipCount: 0,
         timesFlipped: 0,
     };
+let score = {
+    scoreCounter: document.getElementById("score"),
+    scoreCount: 500,
+    scoreDeducted: 0,
+}
 
 
 
@@ -30,6 +35,9 @@ function flipCard(){
     flip.flipCount++;
     flip.flipCounter.innerText = flip.flipCount;
     flip.timesFlipped++;
+    score.scoreCount--;
+    score.scoreCounter.innerText = score.scoreCount;
+    score.scoreDeducted--;
 
 this.classList.add('flip');
 
@@ -65,7 +73,8 @@ function disableCards() {
 
     resetBoard();
 }
-//function to set a time out if cards do not match so they are allowed to be flipped over for the player.
+//function to set a time out if cards do not match.
+// so they are allowed to be flipped over for the player.
 function unFlipcards() {
     lockBoard = true;
 
@@ -94,7 +103,6 @@ function congratulations() {
         winner.classList.add("visible");
     }
 
-        
-    
+         
 cards.forEach(card => card.addEventListener('click', flipCard));
 
