@@ -1,7 +1,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
 
-
+/*targets all elements so I can media query easier later
+also holds all body, html elements to size my document throughout.*/
 * {
     box-sizing: border-box;
 }
@@ -14,7 +15,9 @@ body {
     margin: 0;
     background: radial-gradient(#030177, #ffffff);
     }
-    
+ /* index.html landing page stylings
+ in here there is the stylings and information for header, background image,
+  start button and instructions button*/   
 .header {
     font-family: 'Germania One' , sans-serif;
     text-shadow: 6px 6px #fc1212;
@@ -42,14 +45,6 @@ body {
     padding: 3em;
 }
 
-.guide-turn-container {
-    align-items: center;
-    justify-content: space-between;
-    color: #ffe603;
-    text-shadow: 6px 6px #fc1212;
-    font-size: 2em;
-    font-family: 'Germania One', sans-serif;
-}
 
 .start-btn {
     display: list-item;
@@ -98,7 +93,19 @@ a {
     align-items: center;
     justify-content: center;
 }
-
+/* information on game-page.html*/
+/*here is all information and stylings for Turn container and score container
+overlay text screen that pops up when game ends 
+game container, containing all card stylings and formatting as well as restart and quit buttons
+also contains footer stylings with links */
+.guide-turn-container {
+    align-items: center;
+    justify-content: space-between;
+    color: #ffe603;
+    text-shadow: 6px 6px #fc1212;
+    font-size: 2em;
+    font-family: 'Germania One', sans-serif;
+}
 .turns {
     width: 250px;
     height: 100px;
@@ -273,6 +280,8 @@ text-shadow: 6px 6px #fc1212;
 .footer li:hover {
     transform: scale(1.1);
 }
+
+/*media queries for the game*/
 
 @media (max-width: 500px) {
     .game-container {

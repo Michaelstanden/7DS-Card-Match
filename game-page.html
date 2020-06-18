@@ -10,6 +10,7 @@
      
 </head>
 <body>
+<!--Winning screen text overlay that will pop up on game completion -->
 <div id="winner-text" >
     <button onclick="window.location.reload();" class="overlay-text"> Congratulations You Win!
     <span class="overlay-text-small">Click to Restart</span></button>
@@ -18,6 +19,7 @@
 Data-name containers will be applied for each card image name to ensure random math iteration is easier to apply in JS-->
 <section class="game-container" id="container">
 
+<!--turns and score container code -->
 <div class="guide-turn-container" id="info-container">
 <div class="turns">Turns:
 <span id= "turns-counter"> 0</span>
@@ -25,6 +27,7 @@ Data-name containers will be applied for each card image name to ensure random m
 </div>
 </div>
 
+<!--code for all cards including images for front of the card and the back -->
 <div class="card" data-name="ban">
 <img class="card-front card-face" src="assets/images/ban.jpg">
 <img class="card-back" src="assets/images/cardback.jpg">
@@ -91,6 +94,7 @@ Data-name containers will be applied for each card image name to ensure random m
 </div>
 
 </section> 
+<!--quit and restart buttons -->
 <button class="quit-btn"><a href="index.html">Quit</a></button>
 <button class="restart-btn">Restart</button>
 
