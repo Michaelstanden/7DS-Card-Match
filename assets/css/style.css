@@ -3,322 +3,325 @@
 
 /*targets all elements so I can media query easier later
 also holds all body, html elements to size my document throughout.*/
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
-    min-height: 100vh;
+	min-height: 100vh;
 }
 
 body {
-    margin: 0;
-    background: radial-gradient(#030177, #ffffff);
-    }
- /* index.html landing page stylings
+	margin: 0;
+	background: radial-gradient(#030177, #ffffff);
+}
+
+
+/* index.html landing page stylings
  in here there is the stylings and information for header, background image,
-  start button and instructions button*/   
+  start button and instructions button*/
+
 .header {
-    font-family: 'Germania One' , sans-serif;
-    text-shadow: 6px 6px #fc1212;
-    color:#ffe603;
-    text-align: center;
-    font-size: 3em; 
-    text-decoration: underline; 
+	font-family: 'Germania One', sans-serif;
+	text-shadow: 6px 6px #fc1212;
+	color: #ffe603;
+	text-align: center;
+	font-size: 3em;
+	text-decoration: underline;
 }
 
 #title-img {
-    background-image: url("../images/banner3.jpg");
-    background-repeat: no-repeat;
-    height: 100vh;
-    background-position: center, center;
+	background-image: url("../images/banner3.jpg");
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-position: center, center;
 }
 
-
-#info-container{
-    grid-column: 1 / -1;
-    justify-content: space-between;
+#info-container {
+	grid-column: 1 / -1;
+	justify-content: space-between;
 }
 
 .spacing {
-    margin:auto;
-    padding: 3em;
+	margin: auto;
+	padding: 3em;
 }
 
-
 .start-btn {
-    display: list-item;
-    background-color: rgba(60, 60, 60, 0.85);
-    width: auto;
-    height: auto;
-    margin: auto;
-    font-family: "Germania One", sans-serif;
-    font-size: 2em;
-    color: #ffe603;
-    text-shadow: 6px 6px #fc1212;
-    transition: all 2ms ease-in-out;
-    border: solid 2px;
-    cursor: pointer;
+	display: list-item;
+	background-color: rgba(60, 60, 60, 0.85);
+	width: auto;
+	height: auto;
+	margin: auto;
+	font-family: "Germania One", sans-serif;
+	font-size: 2em;
+	color: #ffe603;
+	text-shadow: 6px 6px #fc1212;
+	transition: all 2ms ease-in-out;
+	border: solid 2px;
+	cursor: pointer;
 }
 
 a {
-    color: #ffe603;
-    text-decoration-line: none;
+	color: #ffe603;
+	text-decoration-line: none;
 }
-
 
 .guide-btn {
-    display: list-item;
-    background-color: rgba(60, 60, 60, 0.85);
-    width: auto;
-    height: auto;
-    margin: auto;
-    font-family: "Germania One", sans-serif;
-    font-size: 2em;
-    color: #ffe603;
-    text-shadow: 6px 6px #fc1212;
-    transition: all 2ms ease-in-out;
-    border: solid 2px;
-    cursor: pointer;
+	display: list-item;
+	background-color: rgba(60, 60, 60, 0.85);
+	width: auto;
+	height: auto;
+	margin: auto;
+	font-family: "Germania One", sans-serif;
+	font-size: 2em;
+	color: #ffe603;
+	text-shadow: 6px 6px #fc1212;
+	transition: all 2ms ease-in-out;
+	border: solid 2px;
+	cursor: pointer;
 }
 
-.guide-btn:hover, .start-btn:hover {
-    transform: scale(1.1);
+.guide-btn:hover,
+.start-btn:hover {
+	transform: scale(1.1);
 }
 
 .text-box {
-    background: linear-gradient(to left, rgb(255, 255, 255, 0)0%, rgba(25, 25, 25, 0.8) 5%, rgba(25, 25, 25, 0.8) 95%, rgb(255, 255, 255, 0) 100%);
-    padding: 15px 10px 10px 10px;
-    display: none;
-    align-items: center;
-    justify-content: center;
-
+	background: linear-gradient(to left, rgb(255, 255, 255, 0)0%, rgba(25, 25, 25, 0.8) 5%, rgba(25, 25, 25, 0.8) 95%, rgb(255, 255, 255, 0) 100%);
+	padding: 15px 10px 10px 10px;
+	display: none;
+	align-items: center;
+	justify-content: center;
 }
+
+
 /* information on game-page.html*/
+
+
 /*here is all information and stylings for Turn container and score container
 overlay text screen that pops up when game ends 
 game container, containing all card stylings and formatting as well as restart and quit buttons
 also contains footer stylings with links */
+
 .guide-turn-container {
-    align-items: center;
-    justify-content: space-between;
-    color: #ffe603;
-    text-shadow: 6px 6px #fc1212;
-    font-size: 2em;
-    font-family: 'Germania One', sans-serif;
+	align-items: center;
+	justify-content: space-between;
+	color: #ffe603;
+	text-shadow: 6px 6px #fc1212;
+	font-size: 2em;
+	font-family: 'Germania One', sans-serif;
 }
+
 .turns {
-    width: 250px;
-    height: 100px;
-    border: solid 2px #ffe603;
-    margin: auto;
-    background-color: rgba(60, 60, 60, 0.85);
-    text-shadow: 6px 6px #fc1212;
+	width: 250px;
+	height: 100px;
+	border: solid 2px #ffe603;
+	margin: auto;
+	background-color: rgba(60, 60, 60, 0.85);
+	text-shadow: 6px 6px #fc1212;
 }
 
 .overlay-text {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  font-family: "Germania One", sans-serif;
-  color:#ffe603;
-  text-shadow: 6px 6px #fc1212;
-  font-size: 3em;
-  background-color: rgba(0, 0, 0, .8)
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	font-family: "Germania One", sans-serif;
+	color: #ffe603;
+	text-shadow: 6px 6px #fc1212;
+	font-size: 3em;
+	background-color: rgba(0, 0, 0, .8)
 }
 
 .overlay-text-small {
-  font-size: 1em;
+	font-size: 1em;
 }
 
-.overlay-text.visible{
-  display: flex;
-  flex-direction: column;
-
+.overlay-text.visible {
+	display: flex;
+	flex-direction: column;
 }
 
-
-.game-container{
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
-    margin: 50px;
-    justify-content: center;
-    perspective: 500px;
+.game-container {
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-gap: 10px;
+	margin: 50px;
+	justify-content: center;
+	perspective: 500px;
 }
 
 .card {
-    height: 175px;
-    width: 125px;
-    margin: 5px;
-  position: relative;
-  transform: scale(1);
-  transform-style: preserve-3d;
-  transition: transform .5s;
-  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+	height: 175px;
+	width: 125px;
+	margin: 5px;
+	position: relative;
+	transform: scale(1);
+	transform-style: preserve-3d;
+	transition: transform .5s;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
 }
-
 
 .card-front {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(1);
-    transition: transform ease-in-out 100ms;
-    border-radius: 10px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translate(1);
+	transition: transform ease-in-out 100ms;
+	border-radius: 10px;
 }
+
 .card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(1);
-    transition: transform ease-in-out 100ms;
-    border-radius: 10px;
-    backface-visibility: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translate(1);
+	transition: transform ease-in-out 100ms;
+	border-radius: 10px;
+	backface-visibility: hidden;
 }
 
-.card-front{
-    transform: translateY(180deg);
+.card-front {
+	transform: translateY(180deg);
 }
 
-.card.flip{
-    transform: rotateY(180deg);
+.card.flip {
+	transform: rotateY(180deg);
 }
 
 button {
-    width: 100%;
-    margin-left: 20px;
-    margin-right: 20px;
+	width: 100%;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .quit-btn {
-    float: left;
-    background-color: rgba(60, 60, 60, 0.85);
-    width: auto;
-    height: auto;
-    font-family: "Germania One", sans-serif;
-    font-size: 3em;
-    color: #ffe603;
-    text-shadow: 6px 6px #fc1212;
-    transition: all 2ms ease-in-out;
-    border: solid 2px;
-    cursor: pointer;
+	float: left;
+	background-color: rgba(60, 60, 60, 0.85);
+	width: auto;
+	height: auto;
+	font-family: "Germania One", sans-serif;
+	font-size: 3em;
+	color: #ffe603;
+	text-shadow: 6px 6px #fc1212;
+	transition: all 2ms ease-in-out;
+	border: solid 2px;
+	cursor: pointer;
 }
-
 
 .restart-btn {
-    float: right;
-    background-color: rgba(60, 60, 60, 0.85);
-    width: auto;
-    height: auto;
-    font-family: "Germania One", sans-serif;
-    font-size: 3em;
-    color: #ffe603;
-    text-shadow: 6px 6px #fc1212;
-    transition: all 2ms ease-in-out;
-    border: solid 2px;
-    cursor: pointer;
+	float: right;
+	background-color: rgba(60, 60, 60, 0.85);
+	width: auto;
+	height: auto;
+	font-family: "Germania One", sans-serif;
+	font-size: 3em;
+	color: #ffe603;
+	text-shadow: 6px 6px #fc1212;
+	transition: all 2ms ease-in-out;
+	border: solid 2px;
+	cursor: pointer;
 }
+
 .spacing {
-    height: 1em;
+	height: 1em;
 }
+
 footer {
-    
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-     display: inline-block;
-     width: 100%;
-     bottom: 0;
-     text-align: center;
-     position: static;
-     background-color: rgba(60, 60, 60, 0.85);
-
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	display: inline-block;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	position: static;
+	background-color: rgba(60, 60, 60, 0.85);
 }
 
-.footer ul li{
-    display: inline-block;
-    justify-content: space-between;
-    padding: 40px;
-    align-items: center;
-    margin: auto;
-    font-family: 'Germania One', sans-serif;
-    font-size: 1.5em;
-    position: static;
-    color: #ffe603;
-    text-shadow: 6px 6px #fc1212;
+.footer ul li {
+	display: inline-block;
+	justify-content: space-between;
+	padding: 40px;
+	align-items: center;
+	margin: auto;
+	font-family: 'Germania One', sans-serif;
+	font-size: 1.5em;
+	position: static;
+	color: #ffe603;
+	text-shadow: 6px 6px #fc1212;
 }
 
 .footer a {
-    transition: all 200ms ease-in;
-    justify-items: center;
-    text-align: center;
-    color: #ffe603;
-    text-shadow: 6px 6px #fc1212;
+	transition: all 200ms ease-in;
+	justify-items: center;
+	text-align: center;
+	color: #ffe603;
+	text-shadow: 6px 6px #fc1212;
 }
 
 .copyright {
-display: inline-block;
-margin: auto;
-font-family: 'Germania One', sans-serif;
-font-size: 1.5em;
-color: #ffe603;
-text-shadow: 6px 6px #fc1212;
+	display: inline-block;
+	margin: auto;
+	font-family: 'Germania One', sans-serif;
+	font-size: 1.5em;
+	color: #ffe603;
+	text-shadow: 6px 6px #fc1212;
 }
 
 .footer li:hover {
-    transform: scale(1.1);
+	transform: scale(1.1);
 }
+
 
 /*media queries for the game*/
 
 @media (max-width: 500px) {
-    .game-container {
-        grid-template-columns: repeat(2, auto);
-    }
-    .inst-flip-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .guide-btn {
-        flex-direction: column;
-        align-items: center;
-        font-size: 1em;
-    }
-    .start-btn {
-        flex-direction: column;
-        align-items: center;
-        font-size: 1em;
-    }
-    .restart-btn{
-        flex-direction: column;
-        align-items: center;
-        float: none;
-    }
-    .quit-btn {
-        flex-direction: column;
-        align-items: center;
-    }
-    .overlay-text.visible {
-        flex-direction: column;
-        align-items: center;
-    }
-    
+	.game-container {
+		grid-template-columns: repeat(2, auto);
+	}
+	.inst-flip-container {
+		flex-direction: column;
+		align-items: center;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+	}
+	.guide-btn {
+		flex-direction: column;
+		align-items: center;
+		font-size: 1em;
+	}
+	.start-btn {
+		flex-direction: column;
+		align-items: center;
+		font-size: 1em;
+	}
+	.restart-btn {
+		flex-direction: column;
+		align-items: center;
+		float: none;
+	}
+	.quit-btn {
+		flex-direction: column;
+		align-items: center;
+	}
+	.overlay-text.visible {
+		flex-direction: column;
+		align-items: center;
+	}
 }
