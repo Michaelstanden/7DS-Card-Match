@@ -83,7 +83,7 @@ function resetBoard(){
 
 function congratulations() {
         winner.classList.add("visible");
-        onclick.this.location.reload();
+        onclick.location.reload();
     }
         
         
