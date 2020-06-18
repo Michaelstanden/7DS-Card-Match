@@ -74,7 +74,7 @@ It also stood out well against the ``#030177`` (navy blue gradient) background a
 
 ### Wireframes
 
-- The wireframes for the initial layout of the website were drawn by me and can be found [here](https://github.com/Michaelstanden/7DS-Card-Match/tree/master/wireframes).
+- The wireframes for the initial layout of the website were drawn by me and can be found [here](https://github.com/Michaelstanden/7DS-Card-Match/tree/master/assets/wireframes).
 
 - The wireframes include a design layout for Desktop, Tablet - portrait and Mobile - portrait.
 
@@ -184,7 +184,7 @@ All code written has been thoroughly validated and passed through the following 
 
 ### Manual Testing
 
-You can view the testing done in the [test.md](https://github.com/Michaelstanden/master/blob/testing.md) where I have written the various tests and methods I have performed.
+You can view the testing done in the [test.md](https://github.TESTING) where I have written the various tests and methods I have performed.
 
 ## Deployment
 
