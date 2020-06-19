@@ -11,8 +11,56 @@ $(document).ready(function () {
 	});
 	$(".restart-btn").click(function () {
 		location.reload();
-	});
+    });
+    
+    const cardConfig = [
+  {
+    name: 'ban',
+    imageSrc: 'ban.jpg',
+  },
+  {
+    name: 'diane',
+    imageSrc: 'diane.jpg',
+  },
+  {
+   name: 'merlin',
+    imageSrc: 'diane.jpg',
+  },
+  {
+   name: 'meliodas',
+    imageSrc: 'diane.jpg',
+  }, 
+  {
+   name: 'king',
+    imageSrc: 'diane.jpg',
+  }, 
+  {
+   name: 'hawk',
+    imageSrc: 'diane.jpg',
+  }, 
+  {
+   name: 'escanor',
+    imageSrc: 'diane.jpg',
+  },   
+  {
+   name: 'elizabeth',
+    imageSrc: 'diane.jpg',
+  }, 
+]
+
+let generatedCardsHtml = '';
+cardConfig.forEach(eachCard => {
+  const cardHTML = 
+  `
+        <div class="card" data-name="${eachCard.name}">
+            <img class="card-front card-face" src="assets/images/${eachCard.imageSrc}">
+            <img class="card-back" src="assets/images/cardback.jpg">
+         </div>
+  `;
+  generatedCardsHtml += cardHTML + cardHTML;
 });
+document.getElementById('game-container').innerHTML = generatedCardsHtml;
+
 /**variables of my game to assign values to objects to invoke and store functions**/
 const cards = document.querySelectorAll(".card");
 let hasFlippedCard = false;
@@ -73,32 +121,33 @@ function checkForMatch() {
 		}
 		disableCards()
 	} else {
-		unFlipcards()
+		unFlipCards()
 	}
 }
-/**function to disable cards if they have matched. 
+/**function to remove event listener if cards have matched. 
 Meaning when cards match they will be disabled to turn back over or be able to be clicked on again
 They will face turned up for the rest of the game until completion or a game reset**/
 function disableCards() {
 	firstCard.removeEventListener('click', flipCard);
 	secondCard.removeEventListener('click', flipCard);
 
-	resetBoard();
+	checkBoard();
 }
 /**function to set a time out if cards do not match.
+ This means cards will turn back around after a set amount of time.
  **/
-function unFlipcards() {
+function unFlipCards() {
 	lockBoard = true;
 
 	setTimeout(() => {
 		firstCard.classList.remove('flip');
 		secondCard.classList.remove('flip');
-		resetBoard();
+		checkBoard();
 	}, 1000);
 
 }
 
-function resetBoard() {
+function checkBoard() {
 	[hasFlippedCard, lockBoard] = [false, false];
 	[firstCard, secondCard] = [null, null];
 }
@@ -120,3 +169,4 @@ function congratulations() {
 
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+});

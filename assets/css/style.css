@@ -15,6 +15,7 @@ html {
 body {
 	margin: 0;
 	background: radial-gradient(#030177, #ffffff);
+    height: 100vh;
 }
 
 
@@ -24,11 +25,13 @@ body {
 
 .header {
 	font-family: 'Germania One', sans-serif;
-	text-shadow: 6px 6px #fc1212;
+	text-shadow: 4px 4px #fc1212;
 	color: #ffe603;
 	text-align: center;
 	font-size: 3em;
 	text-decoration: underline;
+    margin: 0;
+    padding-top: 50px;
 }
 
 #title-img {
@@ -36,16 +39,12 @@ body {
 	background-repeat: no-repeat;
 	height: 100vh;
 	background-position: center, center;
+    background-size: cover;
 }
 
 #info-container {
 	grid-column: 1 / -1;
 	justify-content: space-between;
-}
-
-.spacing {
-	margin: auto;
-	padding: 3em;
 }
 
 .start-btn {
@@ -57,10 +56,11 @@ body {
 	font-family: "Germania One", sans-serif;
 	font-size: 2em;
 	color: #ffe603;
-	text-shadow: 6px 6px #fc1212;
+	text-shadow: 2px 2px #fc1212;
 	transition: all 2ms ease-in-out;
 	border: solid 2px;
 	cursor: pointer;
+    margin-bottom: 20px;
 }
 
 a {
@@ -77,10 +77,11 @@ a {
 	font-family: "Germania One", sans-serif;
 	font-size: 2em;
 	color: #ffe603;
-	text-shadow: 6px 6px #fc1212;
+	text-shadow: 2px 2px #fc1212;
 	transition: all 2ms ease-in-out;
 	border: solid 2px;
 	cursor: pointer;
+    margin-bottom: 10px;
 }
 
 .guide-btn:hover,
@@ -109,9 +110,10 @@ also contains footer stylings with links */
 	align-items: center;
 	justify-content: space-between;
 	color: #ffe603;
-	text-shadow: 6px 6px #fc1212;
+	text-shadow: 2px 2px #fc1212;
 	font-size: 2em;
 	font-family: 'Germania One', sans-serif;
+    padding: 10px;
 }
 
 .turns {
@@ -120,7 +122,8 @@ also contains footer stylings with links */
 	border: solid 2px #ffe603;
 	margin: auto;
 	background-color: rgba(60, 60, 60, 0.85);
-	text-shadow: 6px 6px #fc1212;
+	text-shadow: 2px 2px #fc1212;
+    text-align: center;
 }
 
 .overlay-text {
@@ -135,7 +138,7 @@ also contains footer stylings with links */
 	z-index: 1;
 	font-family: "Germania One", sans-serif;
 	color: #ffe603;
-	text-shadow: 6px 6px #fc1212;
+	text-shadow: 2px 2px #fc1212;
 	font-size: 3em;
 	background-color: rgba(0, 0, 0, .8)
 }
@@ -153,15 +156,14 @@ also contains footer stylings with links */
 	display: grid;
 	grid-template-columns: repeat(4, auto);
 	grid-gap: 10px;
-	margin: 50px;
+	margin: 30px;
 	justify-content: center;
 	perspective: 500px;
 }
 
 .card {
-	height: 175px;
-	width: 125px;
-	margin: 5px;
+	height: 125px;
+	width: 95px;
 	position: relative;
 	transform: scale(1);
 	transform-style: preserve-3d;
@@ -216,7 +218,7 @@ button {
 	font-family: "Germania One", sans-serif;
 	font-size: 3em;
 	color: #ffe603;
-	text-shadow: 6px 6px #fc1212;
+	text-shadow: 2px 2px #fc1212;
 	transition: all 2ms ease-in-out;
 	border: solid 2px;
 	cursor: pointer;
@@ -230,66 +232,19 @@ button {
 	font-family: "Germania One", sans-serif;
 	font-size: 3em;
 	color: #ffe603;
-	text-shadow: 6px 6px #fc1212;
+	text-shadow: 2px 2px #fc1212;
 	transition: all 2ms ease-in-out;
 	border: solid 2px;
 	cursor: pointer;
-}
-
-.spacing {
-	height: 1em;
-}
-
-footer {
-	justify-content: center;
-	justify-items: center;
-	align-items: center;
-	display: inline-block;
-	width: 100%;
-	bottom: 0;
-	text-align: center;
-	position: static;
-	background-color: rgba(60, 60, 60, 0.85);
-}
-
-.footer ul li {
-	display: inline-block;
-	justify-content: space-between;
-	padding: 40px;
-	align-items: center;
-	margin: auto;
-	font-family: 'Germania One', sans-serif;
-	font-size: 1.5em;
-	position: static;
-	color: #ffe603;
-	text-shadow: 6px 6px #fc1212;
-}
-
-.footer a {
-	transition: all 200ms ease-in;
-	justify-items: center;
-	text-align: center;
-	color: #ffe603;
-	text-shadow: 6px 6px #fc1212;
-}
-
-.copyright {
-	display: inline-block;
-	margin: auto;
-	font-family: 'Germania One', sans-serif;
-	font-size: 1.5em;
-	color: #ffe603;
-	text-shadow: 6px 6px #fc1212;
-}
-
-.footer li:hover {
-	transform: scale(1.1);
 }
 
 
 /*media queries for the game*/
 
 @media (max-width: 500px) {
+    header {
+        height: 106px;
+    }
 	.game-container {
 		grid-template-columns: repeat(2, auto);
 	}
@@ -306,6 +261,10 @@ footer {
 		align-items: center;
 		font-size: 1em;
 	}
+    .card {
+        height: 70px;
+        width:65px;
+    }
 	.start-btn {
 		flex-direction: column;
 		align-items: center;
