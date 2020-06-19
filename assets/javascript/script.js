@@ -13,53 +13,6 @@ $(document).ready(function () {
 		location.reload();
     });
     
-    const cardConfig = [
-  {
-    name: 'ban',
-    imageSrc: 'ban.jpg',
-  },
-  {
-    name: 'diane',
-    imageSrc: 'diane.jpg',
-  },
-  {
-   name: 'merlin',
-    imageSrc: 'diane.jpg',
-  },
-  {
-   name: 'meliodas',
-    imageSrc: 'diane.jpg',
-  }, 
-  {
-   name: 'king',
-    imageSrc: 'diane.jpg',
-  }, 
-  {
-   name: 'hawk',
-    imageSrc: 'diane.jpg',
-  }, 
-  {
-   name: 'escanor',
-    imageSrc: 'diane.jpg',
-  },   
-  {
-   name: 'elizabeth',
-    imageSrc: 'diane.jpg',
-  }, 
-]
-
-let generatedCardsHtml = '';
-cardConfig.forEach(eachCard => {
-  const cardHTML = 
-  `
-        <div class="card" data-name="${eachCard.name}">
-            <img class="card-front card-face" src="assets/images/${eachCard.imageSrc}">
-            <img class="card-back" src="assets/images/cardback.jpg">
-         </div>
-  `;
-  generatedCardsHtml += cardHTML + cardHTML;
-});
-document.getElementById('game-container').innerHTML = generatedCardsHtml;
 
 /**variables of my game to assign values to objects to invoke and store functions**/
 const cards = document.querySelectorAll(".card");
