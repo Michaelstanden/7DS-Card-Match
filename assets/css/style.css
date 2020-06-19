@@ -262,8 +262,8 @@ button {
 		font-size: 1em;
 	}
     .card {
-        height: 70px;
-        width:65px;
+        height: 80px;
+        width: 65px;
     }
 	.start-btn {
 		flex-direction: column;
