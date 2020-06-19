@@ -101,17 +101,28 @@ this.classList.add('flip');
 
 I then created a condition. If has flipped card is false then it means the first time a player a clicked a card. Then I set the hasFlippedCard to be ture, then the firstCard as the value of this. I wanted to console.log these to see when I clicked on the card I could see what was being triggered in the event by the console. When clicking on the card It triggered as it should the first time and when flipping all other cards over it did not trigger again. This worked in showing the console that when the player clicks on a card first it recognises this and stores it.
 I then did the same process for the else statement to target the second card flip
-(assets/images/img3.png)
-
-(assets/images/img4.png)
+<h1 align="center">
+        <img src="assets/images/img3.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="200">
+</h1>
+<h1 align="center">
+        <img src="assets/images/img4.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="200">
+</h1>
 Logged both of these to the console to see if the first card and second card on click will be registered. It was.
-(assets/images/img5.png)
+<h1 align="center">
+        <img src="assets/images/img5.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="200">
+</h1>
 After testing this I needed to look at matching my cards and how to access the values I put in the dataset values in my html before. Here I console logged the firstcard and seconcard variables with the data.set.name command. This then let me see when I clicked on two cards what the value of those cards were.
-(assets/images/img6.png)
+<h1 align="center">
+        <img src="assets/images/img6.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="200">
+</h1>
 After logging this I went to create a match function. Within this I would declare that if firstcard.dataset.name === secondcard.dataset.name then we would need to remove the eventlistener for click and flip from these matched pair values so that they can be stored and not be able to be clicked on and matched again.
-(assets/images/img7.png)
+<h1 align="center">
+        <img src="assets/images/img7.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="200">
+</h1>
 The second stage I had to do was if it wasn’t a match, I had to remove the class list flip to prevent the non matched pair remaining flipped over. However when doing this I found that the second card wouldn’t flip over if it wasn’t a match.
-(assets/images/img8.png)
+<h1 align="center">
+        <img src="assets/images/img8.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="200">
+</h1>
 After researching I found on MDN that you could add a timeOut to this to ensure that there is a delay to ensure we can see the card flip before it calls the function. I added a delay to the end of the function to see could see if the card would flip, and if not a match turn back over.
 
 After playing the game I discovered that if I flipped over a pair that didnt match and I tried to flip another card before the timer has flipped back then I would have broken my logic and the cards would remain turned over even when they did not match. I had to create a variable that let me lock the board when cards were being turned over. The variable allowed me to lock the board if the cards did not match meaning that until the function of the settimeout was complete we could not turn over another card, meaning my logic would not break. If I set the lockboard function to be true in the checkformatch function then the board would allow me to continue and click cards after this again.
@@ -122,11 +133,15 @@ Next mission was to then create a way to shuffle my cards on the page load to en
 
               To make a winner page when the game was completed I had to define a variable of let matches = 0;
 from there I added matches into my checkForMatch function and incremented the value by 1 every time we got a match. This will now be used to trigger the event of winning the game when the value reaches 8, as there are 16 cards, 8 pairs.
-Img9
+<h1 align="center">
+        <img src="assets/images/img9.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="200">
+</h1>
 After this I went to use a function of a pop up screen with overlay-text in my html to appear on completion of the game. 
 This would then be able to disappear and reset the game on a click which I put in the function of the button html element. 
 After this I needed to register the turns counter so added turns as a variable set to 0; as I did with matches. I then nested this is flipCard function so every time a card would flip it would increment the turn but 1. I console logged this to see if it worked.
-[here](assets/images/img10.png)
+<h1 align="center">
+        <img src="assets/images/img10.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="200">
+</h1>
 
 Now I needed to target the turns element within the js file and add a function so that whenever the turns increases by 1 it shows in the turns counter at the top of the page. I had difficulty with this in particular. As the code I used originally would only target the turns element on the screen with a Click. This meant that when the user clicked on the turns counter it would increase by one. I needed to find a way to target this into my flip card function so that when a player flipped a card the turn would increase by one. My result was I created an object variable for flips and score and put these variables into the flip card function.
 let flip = {
