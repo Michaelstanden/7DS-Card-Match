@@ -1,6 +1,6 @@
 # 7DS Card Match
 
-[7 DS Card Match]( https://github.com/Michaelstanden/7DS-Card-Match.git) is an interactive card matching game with a popular Japanese anime theme.
+[7 DS Card Match](https://github.com/Michaelstanden/7DS-Card-Match.git) is an interactive card matching game with a popular Japanese anime theme.
 
 I have created this game to engage users of all ages, especially those who enjoy the 7 Deadly Sins Anime. It has been designed so that it is easy to play, and is fully responsive to the users a range of devices, whether that be android, IPhone or various tablets and laptops.
 
@@ -183,7 +183,7 @@ All code written has been thoroughly validated and passed through the following 
 
 ### Manual Testing
 
-You can view the testing done in the [test.md](https://github.TESTING) where I have written the various tests and methods I have performed.
+You can view the testing done in the [test.md](https://github.) where I have written the various tests and methods I have performed.
 
 ## Deployment
 
