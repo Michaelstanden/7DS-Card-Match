@@ -101,17 +101,17 @@ this.classList.add('flip');
 
 I then created a condition. If has flipped card is false then it means the first time a player a clicked a card. Then I set the hasFlippedCard to be ture, then the firstCard as the value of this. I wanted to console.log these to see when I clicked on the card I could see what was being triggered in the event by the console. When clicking on the card It triggered as it should the first time and when flipping all other cards over it did not trigger again. This worked in showing the console that when the player clicks on a card first it recognises this and stores it.
 I then did the same process for the else statement to target the second card flip
-[here](assets/images/img3.png)
+(assets/images/img3.png)
 
-[here](assets/images/img4.png)
+(assets/images/img4.png)
 Logged both of these to the console to see if the first card and second card on click will be registered. It was.
-[here](assets/images/img5.png)
+(assets/images/img5.png)
 After testing this I needed to look at matching my cards and how to access the values I put in the dataset values in my html before. Here I console logged the firstcard and seconcard variables with the data.set.name command. This then let me see when I clicked on two cards what the value of those cards were.
-[here](assets/images/img6.png)
+(assets/images/img6.png)
 After logging this I went to create a match function. Within this I would declare that if firstcard.dataset.name === secondcard.dataset.name then we would need to remove the eventlistener for click and flip from these matched pair values so that they can be stored and not be able to be clicked on and matched again.
-[here](assets/images/img7.png)
+(assets/images/img7.png)
 The second stage I had to do was if it wasn’t a match, I had to remove the class list flip to prevent the non matched pair remaining flipped over. However when doing this I found that the second card wouldn’t flip over if it wasn’t a match.
-[here](assets/images/img8.png)
+(assets/images/img8.png)
 After researching I found on MDN that you could add a timeOut to this to ensure that there is a delay to ensure we can see the card flip before it calls the function. I added a delay to the end of the function to see could see if the card would flip, and if not a match turn back over.
 
 After playing the game I discovered that if I flipped over a pair that didnt match and I tried to flip another card before the timer has flipped back then I would have broken my logic and the cards would remain turned over even when they did not match. I had to create a variable that let me lock the board when cards were being turned over. The variable allowed me to lock the board if the cards did not match meaning that until the function of the settimeout was complete we could not turn over another card, meaning my logic would not break. If I set the lockboard function to be true in the checkformatch function then the board would allow me to continue and click cards after this again.
