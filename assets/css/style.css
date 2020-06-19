@@ -211,12 +211,13 @@ button {
 }
 
 .quit-btn {
-	float: left;
+	position: relative;
+    left: 25%;
 	background-color: rgba(60, 60, 60, 0.85);
 	width: auto;
 	height: auto;
 	font-family: "Germania One", sans-serif;
-	font-size: 3em;
+	font-size: 2em;
 	color: #ffe603;
 	text-shadow: 2px 2px #fc1212;
 	transition: all 2ms ease-in-out;
@@ -225,12 +226,13 @@ button {
 }
 
 .restart-btn {
-	float: right;
+	position: relative;
+    margin-left: 50%;
 	background-color: rgba(60, 60, 60, 0.85);
 	width: auto;
 	height: auto;
 	font-family: "Germania One", sans-serif;
-	font-size: 3em;
+	font-size: 2em;
 	color: #ffe603;
 	text-shadow: 2px 2px #fc1212;
 	transition: all 2ms ease-in-out;
@@ -274,10 +276,12 @@ button {
 		flex-direction: column;
 		align-items: center;
 		float: none;
+        margin-left: 25%;
 	}
 	.quit-btn {
 		flex-direction: column;
 		align-items: center;
+        left: 15%
 	}
 	.overlay-text.visible {
 		flex-direction: column;
