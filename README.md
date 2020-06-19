@@ -183,7 +183,7 @@ All code written has been thoroughly validated and passed through the following 
 
 ### Manual Testing
 
-You can view the testing done in the [test.md](https://github.) where I have written the various tests and methods I have performed.
+You can view the testing done in the [test.md](https://github.com/Michaelstanden/7DS-Card-Match/blob/master/testing.md) where I have written the various tests and methods I have performed.
 
 ## Deployment
 
@@ -256,4 +256,4 @@ A special thanks to:
 
 ## Disclaimer
 
-This site has been created entirely for **educational purposes** only and is not intended to be used in any other capacity.
+This site has been created for **educational purposes** only and is not intended to be used in any other capacity.
