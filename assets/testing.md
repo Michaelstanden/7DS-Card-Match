@@ -134,7 +134,7 @@ Next mission was to then create a way to shuffle my cards on the page load to en
               To make a winner page when the game was completed I had to define a variable of let matches = 0;
 from there I added matches into my checkForMatch function and incremented the value by 1 every time we got a match. This will now be used to trigger the event of winning the game when the value reaches 8, as there are 16 cards, 8 pairs.
 <h1 align="center">
-        <img src="assets/images/img9.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="200">
+        <img src="./images/img9.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="200">
 </h1>
 After this I went to use a function of a pop up screen with overlay-text in my html to appear on completion of the game. 
 This would then be able to disappear and reset the game on a click which I put in the function of the button html element. 
