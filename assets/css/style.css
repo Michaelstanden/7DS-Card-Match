@@ -61,6 +61,7 @@ body {
 	border: solid 2px;
 	cursor: pointer;
     margin-bottom: 20px;
+    margin-top: 17%;
 }
 
 a {
@@ -156,7 +157,7 @@ also contains footer stylings with links */
 	display: grid;
 	grid-template-columns: repeat(4, auto);
 	grid-gap: 10px;
-	margin: 30px;
+	margin: 5px;
 	justify-content: center;
 	perspective: 500px;
 }
