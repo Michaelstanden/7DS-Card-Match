@@ -85,7 +85,10 @@ I laboriously tested the layout of the landing page throughout the development o
 #### Game Area
 
 The game area being the main feature and purpose of the site I meticulously tested that each function displays and works correctly on various platforms as well as making sure the game play is smooth and easily viewable by the user.
-When writing the code out manually in the console in dev tools, I can see that the first test is working. In this test I wanted to see if the data-name I have given to my images could be passed as a value. When a user clicks the card it will tell the console which value has been clicked. I wanted to do this to ensure that values can be matched later in the JavaScript and if values do not match then they will flip back over. I also wanted to see what the this. Keyword was representing so I console logged it to make it clear. [here](img)
+When writing the code out manually in the console in dev tools, I can see that the first test is working. In this test I wanted to see if the data-name I have given to my images could be passed as a value. When a user clicks the card it will tell the console which value has been clicked. I wanted to do this to ensure that values can be matched later in the JavaScript and if values do not match then they will flip back over. I also wanted to see what the this. Keyword was representing so I console logged it to make it clear.
+<h1 align="center">
+        <img src="./images/img1.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
+</h1>
 Next I wanted to create a flip function in my game and test that the cards were being recognised by the console and that the flip function would activate on a click of a card.
 <h1 align="center">
         <img src="./images/img2.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
