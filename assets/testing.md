@@ -137,7 +137,7 @@ Another bug I found in the game when playing is if I double clicked on a card it
 
 Next mission was to then create a way to shuffle my cards on the page load to ensure that the game was able to be played correctly and not just pairs side by side. I had to research a way to find how to give the cards a random value number after already giving them a dataset. I found flexbox property called order, a flex item property that defaults to 0 which means that every flex item belongs to the same group, and then they will be grouped by source order. If you assign a different integer to the order property items will get ordered first by ascending order according to the value in the order property and then source order. So to shuffle the cards I had to generate a random number between 0-15 (because I have 16 cards) and assign to each one of our cards
 
-              To make a winner page when the game was completed I had to define a variable of let matches = 0;
+To make a winner page when the game was completed I had to define a variable of let matches = 0;
 from there I added matches into my checkForMatch function and incremented the value by 1 every time we got a match. This will now be used to trigger the event of winning the game when the value reaches 8, as there are 16 cards, 8 pairs.
 <h1 align="center">
         <img src="./images/img9.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
