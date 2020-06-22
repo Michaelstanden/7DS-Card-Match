@@ -15,9 +15,9 @@ html {
 body {
 	margin: 0;
 	background: radial-gradient(#030177, #ffffff);
-    height: 100vh;
-    flex-direction: column;
-    justify-content: center;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: center;
 }
 
 
@@ -32,8 +32,8 @@ body {
 	text-align: center;
 	font-size: 3em;
 	text-decoration: underline;
-    margin: 0;
-    padding-top: 50px;
+	margin: 0;
+	padding-top: 50px;
 }
 
 #title-img {
@@ -41,7 +41,7 @@ body {
 	background-repeat: no-repeat;
 	height: 100vh;
 	background-position: center, center;
-    background-size: cover;
+	background-size: cover;
 }
 
 #info-container {
@@ -62,8 +62,8 @@ body {
 	transition: all 2ms ease-in-out;
 	border: solid 2px;
 	cursor: pointer;
-    margin-bottom: 20px;
-    margin-top: 17%;
+	margin-bottom: 20px;
+	margin-top: 17%;
 }
 
 a {
@@ -84,7 +84,7 @@ a {
 	transition: all 2ms ease-in-out;
 	border: solid 2px;
 	cursor: pointer;
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .guide-btn:hover,
@@ -116,7 +116,7 @@ also contains footer stylings with links */
 	text-shadow: 2px 2px #fc1212;
 	font-size: 2em;
 	font-family: 'Germania One', sans-serif;
-    padding: 10px;
+	padding: 10px;
 }
 
 .turns {
@@ -126,7 +126,7 @@ also contains footer stylings with links */
 	margin: auto;
 	background-color: rgba(60, 60, 60, 0.85);
 	text-shadow: 2px 2px #fc1212;
-    text-align: center;
+	text-align: center;
 }
 
 .overlay-text {
@@ -214,11 +214,11 @@ button {
 }
 
 .game-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 30px auto;
-    width: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 30px auto;
+	width: 300px;
 }
 
 .quit-btn {
@@ -251,9 +251,9 @@ button {
 /*media queries for the game*/
 
 @media (max-width: 500px) {
-    header {
-        height: 106px;
-    }
+	header {
+		height: 106px;
+	}
 	.game-container {
 		grid-template-columns: repeat(4, auto);
 	}
@@ -270,10 +270,10 @@ button {
 		align-items: center;
 		font-size: 1em;
 	}
-    .card {
-        height: 80px;
-        width: 65px;
-    }
+	.card {
+		height: 80px;
+		width: 65px;
+	}
 	.start-btn {
 		flex-direction: column;
 		align-items: center;
@@ -283,12 +283,12 @@ button {
 		flex-direction: column;
 		align-items: center;
 		float: none;
-        margin-left: 25%;
+		margin-left: 25%;
 	}
 	.quit-btn {
 		flex-direction: column;
 		align-items: center;
-        left: 15%
+		left: 15%
 	}
 	.overlay-text.visible {
 		flex-direction: column;
