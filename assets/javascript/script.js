@@ -13,6 +13,9 @@ $(document).ready(function () {
 		location.reload();
     });
     
+    /** end of jQuery code. */
+
+    
 
 /**variables of my game to assign values to objects to invoke and store functions**/
 const cards = document.querySelectorAll(".card");
