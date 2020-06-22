@@ -228,6 +228,7 @@ If you wanted to run this project locally and not use GitHub Pages, you can foll
 ### Code Credits
 
 1. The shuffle method was obtained from [Developer Mozilla](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use-data-attributes).
+(a)[Developer Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random).
 
 2. The idea on how get the 3D perspective in CSS for the card flips provided by [Desandro](https://3dtransforms.desandro.com/card-flip).
 
