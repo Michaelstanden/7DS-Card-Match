@@ -130,7 +130,7 @@ After logging this I went to create a match function. Within this I would declar
 </h1>
 The second stage I had to do was if it wasn’t a match, I had to remove the class list flip to prevent the non matched pair remaining flipped over. However when doing this I found that the second card wouldn’t flip over if it wasn’t a match.
 <h1 align="center">
-        <img src="./images/img8.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
+        <img src="./images/test8.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
 </h1>
 After researching I found on MDN that you could add a timeOut to this to ensure that there is a delay to ensure we can see the card flip before it calls the function. I added a delay to the end of the function to see could see if the card would flip, and if not a match turn back over.
 
