@@ -87,11 +87,14 @@ I laboriously tested the layout of the landing page throughout the development o
 The game area being the main feature and purpose of the site I meticulously tested that each function displays and works correctly on various platforms as well as making sure the game play is smooth and easily viewable by the user.
 When writing the code out manually in the console in dev tools, I can see that the first test is working. In this test I wanted to see if the data-name I have given to my images could be passed as a value. When a user clicks the card it will tell the console which value has been clicked. I wanted to do this to ensure that values can be matched later in the JavaScript and if values do not match then they will flip back over. I also wanted to see what the this. Keyword was representing so I console logged it to make it clear.
 <h1 align="center">
-        <img src="./images/img1.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
+        <img src="./images/test1.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
+</h1>
+<h1 align="center">
+        <img src="./images/test1.1.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
 </h1>
 Next I wanted to create a flip function in my game and test that the cards were being recognised by the console and that the flip function would activate on a click of a card.
 <h1 align="center">
-        <img src="./images/img2.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
+        <img src="./images/test2.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
 </h1>
 In this test I wanted to set the function to test the game and register when the player clicked the first card or when the player clicks the second card and if the console would recognise this. This would make it possible to ease in a matching logic function with this later. I set two variables. One being hasFlippedCard and another one holding the value of firstCard and secondCard. 
 When setting these I then updated my flipCard function and changed the toggle class to add class instead.
@@ -108,22 +111,22 @@ this.classList.add('flip');
 I then created a condition. If has flipped card is false then it means the first time a player a clicked a card. Then I set the hasFlippedCard to be ture, then the firstCard as the value of this. I wanted to console.log these to see when I clicked on the card I could see what was being triggered in the event by the console. When clicking on the card It triggered as it should the first time and when flipping all other cards over it did not trigger again. This worked in showing the console that when the player clicks on a card first it recognises this and stores it.
 I then did the same process for the else statement to target the second card flip
 <h1 align="center">
-        <img src="./images/img3.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
+        <img src="./images/test3.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
 </h1>
 <h1 align="center">
-        <img src="./images/img4.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
+        <img src="./images/test4.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
 </h1>
 Logged both of these to the console to see if the first card and second card on click will be registered. It was.
 <h1 align="center">
-        <img src="./images/img5.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
+        <img src="./images/test5.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
 </h1>
 After testing this I needed to look at matching my cards and how to access the values I put in the dataset values in my html before. Here I console logged the firstcard and seconcard variables with the data.set.name command. This then let me see when I clicked on two cards what the value of those cards were.
 <h1 align="center">
-        <img src="./images/img6.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
+        <img src="./images/test6.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
 </h1>
 After logging this I went to create a match function. Within this I would declare that if firstcard.dataset.name === secondcard.dataset.name then we would need to remove the eventlistener for click and flip from these matched pair values so that they can be stored and not be able to be clicked on and matched again.
 <h1 align="center">
-        <img src="./images/img7.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
+        <img src="./images/test7.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
 </h1>
 The second stage I had to do was if it wasn’t a match, I had to remove the class list flip to prevent the non matched pair remaining flipped over. However when doing this I found that the second card wouldn’t flip over if it wasn’t a match.
 <h1 align="center">
@@ -140,7 +143,7 @@ Next mission was to then create a way to shuffle my cards on the page load to en
 To make a winner page when the game was completed I had to define a variable of let matches = 0;
 from there I added matches into my checkForMatch function and incremented the value by 1 every time we got a match. This will now be used to trigger the event of winning the game when the value reaches 8, as there are 16 cards, 8 pairs.
 <h1 align="center">
-        <img src="./images/img9.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
+        <img src="./images/test9.png" alt="Manual Testing Image" title="Manual Testing Image" width="500" height="300">
 </h1>
 After this I went to use a function of a pop up screen with overlay-text in my html to appear on completion of the game. 
 This would then be able to disappear and reset the game on a click which I put in the function of the button html element. 
