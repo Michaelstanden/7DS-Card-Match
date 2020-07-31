@@ -8,6 +8,8 @@ The use of flips, scoring system and bright colour scheme has been designed to b
 
 I have used HTML, CSS, and JavaScript to build this game which will form part of my portfolio.
 
+A live link to the site, [click here](https://michaelstanden.github.io/7DS-Card-Match/)
+
 
 
 ## Table of Contents
